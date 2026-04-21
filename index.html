@@ -1,0 +1,974 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PolicyCures | Insurance Archived for Absolute Clarity</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f6f2fc",
+              "on-primary-fixed-variant": "#3b35a7",
+              "surface-tint": "#544fc0",
+              "inverse-surface": "#303037",
+              "surface-container": "#f0ecf6",
+              "on-surface": "#1b1b22",
+              "on-primary-container": "#a9a7ff",
+              "surface-bright": "#fcf8ff",
+              "inverse-on-surface": "#f3eff9",
+              secondary: "#5b5a86",
+              "secondary-fixed": "#e2dfff",
+              "surface-container-high": "#eae6f1",
+              "tertiary-container": "#752c00",
+              error: "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#3730a3",
+              "primary-fixed": "#e2dfff",
+              "surface-container-lowest": "#ffffff",
+              tertiary: "#511c00",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#c4c1f5",
+              "outline-variant": "#c8c4d5",
+              "tertiary-fixed-dim": "#ffb694",
+              "on-tertiary-fixed-variant": "#7a3003",
+              "surface-dim": "#dcd8e3",
+              "surface-container-highest": "#e4e1eb",
+              primary: "#1f108e",
+              "on-secondary-fixed-variant": "#43426d",
+              "inverse-primary": "#c3c0ff",
+              "on-secondary-fixed": "#18163f",
+              background: "#fcf8ff",
+              "on-tertiary-fixed": "#351000",
+              "tertiary-fixed": "#ffdbcc",
+              surface: "#fcf8ff",
+              outline: "#777584",
+              "on-primary-fixed": "#0f0069",
+              "error-container": "#ffdad6",
+              "surface-variant": "#e4e1eb",
+              "on-secondary-container": "#555380",
+              "on-surface-variant": "#464553",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#c3c0ff",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#fe9562",
+              "on-background": "#1b1b22",
+              "secondary-container": "#cdcafd",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .premium-gradient {
+        background: linear-gradient(180deg, #1f108e 0%, #3730a3 100%);
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #fcf8ff;
+        color: #1b1b22;
+      }
+      h1,
+      h2,
+      h3,
+      .font-headline {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-surface">
+    <!-- Top Navigation Shell -->
+    <header class="bg-[#fcf8ff] dark:bg-slate-950 sticky top-0 z-50">
+      <nav
+        class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto"
+      >
+        <div
+          class="flex items-center gap-2 cursor-pointer active:opacity-80 transition-all"
+        >
+          <span
+            class="material-symbols-outlined text-[#1f108e] dark:text-indigo-400 text-3xl"
+            data-icon="policy"
+            >policy</span
+          >
+          <span
+            class="font-manrope tracking-tight font-bold text-2xl font-extrabold tracking-tighter text-[#1f108e] dark:text-indigo-300"
+            >PolicyCures</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            class="text-[#1f108e] dark:text-indigo-300 font-bold border-b-2 border-[#1f108e] py-1 text-sm tracking-tight font-manrope"
+            href="#"
+            >Solutions</a
+          >
+          <a
+            class="text-[#464553] dark:text-slate-400 font-medium hover:bg-[#eae6f1] dark:hover:bg-slate-800 transition-colors duration-300 px-3 py-1 rounded-lg text-sm tracking-tight font-manrope"
+            href="#"
+            >Intelligence</a
+          >
+          <a
+            class="text-[#464553] dark:text-slate-400 font-medium hover:bg-[#eae6f1] dark:hover:bg-slate-800 transition-colors duration-300 px-3 py-1 rounded-lg text-sm tracking-tight font-manrope"
+            href="#"
+            >Our Method</a
+          >
+          <a
+            class="text-[#464553] dark:text-slate-400 font-medium hover:bg-[#eae6f1] dark:hover:bg-slate-800 transition-colors duration-300 px-3 py-1 rounded-lg text-sm tracking-tight font-manrope"
+            href="#"
+            >Journal</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="hidden md:block text-sm font-semibold text-primary px-4 py-2 hover:bg-surface-container-high transition-all rounded-lg"
+          >
+            Sign In
+          </button>
+          <button
+            class="premium-gradient text-white text-sm font-bold px-6 py-2.5 rounded-md shadow-sm active:scale-95 transition-all"
+          >
+            Consult Expert
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[751px] flex items-center overflow-hidden bg-background"
+      >
+        <div
+          class="max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          <div class="z-10">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold mb-6 tracking-wider uppercase"
+            >
+              <span
+                class="material-symbols-outlined text-xs"
+                data-icon="verified"
+                >verified</span
+              >
+              The Standard of Editorial Intelligence
+            </div>
+            <h1
+              class="text-6xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] text-on-surface mb-8"
+            >
+              Insurance Archived for
+              <span class="text-primary italic">Absolute</span> Clarity.
+            </h1>
+            <p
+              class="text-xl text-on-surface-variant font-light leading-relaxed max-w-xl mb-10"
+            >
+              We transform fragmented business data into institutional
+              intelligence. High-fidelity extraction meets rigorous risk
+              analysis for the discerning corporate estate.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="premium-gradient text-white px-8 py-4 rounded-md font-bold text-lg flex items-center gap-2 group shadow-lg"
+              >
+                Start Free Consultation
+                <span
+                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+              <button
+                class="bg-surface-container-lowest border border-outline-variant/30 text-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-surface-container-low transition-all"
+              >
+                How it Works
+              </button>
+            </div>
+          </div>
+          <div class="relative hidden lg:block">
+            <div
+              class="absolute -top-20 -right-20 w-96 h-96 bg-primary-fixed opacity-20 rounded-full blur-[100px]"
+            ></div>
+            <div
+              class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform rotate-1"
+            >
+              <img
+                alt="Corporate Excellence"
+                class="w-full h-[600px] object-cover"
+                data-alt="modern glass and steel architecture of a corporate financial district in evening light with high-end aesthetic"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfSMOsSyRcA-cML-_DCzpUa2LlVb31_DVVoXX7YnxIiIKiO7e1hOY07BuDjbEnbtdhWcaTiU1n6Lzef-odvDb4Li3jdjou_4QMnTRwomIcFFUg-8gMSvrIwC0BJ6w8dYLIYt1yiGX1AztLeV1IiQdJ31zPe5fihBFqEwDvvP4UP2aXVPRJCB1wID7efJC0c3ipQmss5l4qHovRyIAlOlBzr2JfDvVf9Vo8aeWUrtdOdeQjSkqknKEkKnJPKVUEeAIwFkV2h8QVO2c"
+              />
+              <div
+                class="absolute bottom-8 left-8 right-8 glass-panel p-6 rounded-lg border border-white/20"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <span
+                    class="text-xs font-bold uppercase tracking-widest text-primary"
+                    >Live Asset Analysis</span
+                  >
+                  <span
+                    class="text-xs bg-tertiary-container text-white px-2 py-0.5 rounded"
+                    >High Risk</span
+                  >
+                </div>
+                <div
+                  class="h-2 bg-surface-container-highest rounded-full overflow-hidden"
+                >
+                  <div class="w-[72%] h-full bg-primary"></div>
+                </div>
+                <p class="mt-4 text-sm font-medium text-on-surface">
+                  Precision Risk Index: 89.4pt (Optimized)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search Widget -->
+      <section class="py-12 -mt-16 relative z-20">
+        <div class="max-w-4xl mx-auto px-6">
+          <div
+            class="bg-surface-container-lowest p-4 rounded-xl shadow-xl border border-outline-variant/10"
+          >
+            <div class="flex gap-1 mb-4 overflow-x-auto pb-2">
+              <button
+                class="px-6 py-2 rounded-lg bg-primary-fixed text-primary font-bold text-sm whitespace-nowrap"
+              >
+                Life
+              </button>
+              <button
+                class="px-6 py-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-medium text-sm transition-all whitespace-nowrap"
+              >
+                Health
+              </button>
+              <button
+                class="px-6 py-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-medium text-sm transition-all whitespace-nowrap"
+              >
+                Motor
+              </button>
+              <button
+                class="px-6 py-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-medium text-sm transition-all whitespace-nowrap"
+              >
+                Property
+              </button>
+              <button
+                class="px-6 py-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-medium text-sm transition-all whitespace-nowrap"
+              >
+                Liability
+              </button>
+            </div>
+            <div class="relative flex items-center">
+              <span
+                class="material-symbols-outlined absolute left-4 text-on-surface-variant"
+                data-icon="search"
+                >search</span
+              >
+              <input
+                class="w-full pl-12 pr-32 py-4 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary-fixed text-on-surface placeholder:text-on-surface-variant/50"
+                placeholder="Search for a specific policy archive or underwriting term..."
+                type="text"
+              />
+              <button
+                class="absolute right-2 premium-gradient text-white px-6 py-2.5 rounded-md font-bold text-sm"
+              >
+                Find Policy
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Curated Portfolios (Bento Grid) -->
+      <section class="py-32 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto px-8">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8"
+          >
+            <div>
+              <h2
+                class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-4"
+              >
+                Curated Portfolios
+              </h2>
+              <p class="text-on-surface-variant text-lg max-w-xl">
+                Bespoke insurance tiers designed for stability, precision, and
+                longevity.
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <button
+                class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-high transition-all"
+              >
+                <span class="material-symbols-outlined" data-icon="chevron_left"
+                  >chevron_left</span
+                >
+              </button>
+              <button
+                class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-high transition-all"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-transparent hover:border-primary-fixed transition-all flex flex-col h-full"
+            >
+              <div class="flex justify-between items-start mb-12">
+                <div
+                  class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl"
+                    data-icon="shield_with_heart"
+                    >shield_with_heart</span
+                  >
+                </div>
+                <span
+                  class="text-xs font-bold text-outline uppercase tracking-widest"
+                  >Entry Level</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold mb-4">The Starter</h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow"
+              >
+                A streamlined foundation for emerging estates. Covers essential
+                liabilities with editorial precision.
+              </p>
+              <div class="mb-8">
+                <span class="text-4xl font-extrabold text-on-surface"
+                  >€4,200</span
+                >
+                <span class="text-on-surface-variant text-sm">/annual</span>
+              </div>
+              <button
+                class="w-full py-3 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all"
+              >
+                Select Tier
+              </button>
+            </div>
+            <!-- Card 2 (Premium Highlight) -->
+            <div
+              class="group bg-primary text-white p-8 rounded-xl shadow-2xl flex flex-col h-full transform scale-105 relative z-10"
+            >
+              <div class="absolute top-0 right-0 p-4">
+                <span
+                  class="bg-tertiary text-white px-3 py-1 rounded text-[10px] font-black uppercase tracking-widest"
+                  >Elite Choice</span
+                >
+              </div>
+              <div class="flex justify-between items-start mb-12">
+                <div
+                  class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl"
+                    data-icon="diamond"
+                    >diamond</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Premium Motor</h3>
+              <p
+                class="text-primary-fixed-dim text-sm leading-relaxed mb-8 flex-grow"
+              >
+                Comprehensive coverage for high-value fleets. Includes 24/7
+                neural tracking and rapid claim resolution.
+              </p>
+              <div class="mb-8">
+                <span class="text-4xl font-extrabold">€12,500</span>
+                <span class="text-primary-fixed-dim text-sm">/annual</span>
+              </div>
+              <button
+                class="w-full py-3 rounded-lg bg-white text-primary font-bold hover:bg-secondary-fixed transition-all shadow-lg"
+              >
+                Select Premium
+              </button>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-transparent hover:border-primary-fixed transition-all flex flex-col h-full"
+            >
+              <div class="flex justify-between items-start mb-12">
+                <div
+                  class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl"
+                    data-icon="account_balance"
+                    >account_balance</span
+                  >
+                </div>
+                <span
+                  class="text-xs font-bold text-outline uppercase tracking-widest"
+                  >Generational</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Legacy Life</h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow"
+              >
+                Multi-generational wealth preservation through sophisticated
+                life insurance structuring.
+              </p>
+              <div class="mb-8 text-on-surface font-bold italic">
+                Custom Pricing
+              </div>
+              <button
+                class="w-full py-3 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all"
+              >
+                Contact Partner
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Methodology (Editorial Layout) -->
+      <section class="py-32 bg-background">
+        <div class="max-w-screen-2xl mx-auto px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="order-2 lg:order-1">
+              <div class="space-y-16">
+                <div class="flex gap-8 group">
+                  <span
+                    class="text-6xl font-black text-primary-fixed-dim group-hover:text-primary transition-colors"
+                    >01</span
+                  >
+                  <div>
+                    <h4 class="text-2xl font-bold mb-4">Neural Comparison</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Our proprietary AI extracts data points from thousands of
+                      active policies to find the definitive market leader for
+                      your specific risk profile.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-8 group">
+                  <span
+                    class="text-6xl font-black text-primary-fixed-dim group-hover:text-primary transition-colors"
+                    >02</span
+                  >
+                  <div>
+                    <h4 class="text-2xl font-bold mb-4">Expert Audit</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Human intelligence overlays technical data. Our senior
+                      underwriters review every extraction for nuance that
+                      algorithms might miss.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-8 group">
+                  <span
+                    class="text-6xl font-black text-primary-fixed-dim group-hover:text-primary transition-colors"
+                    >03</span
+                  >
+                  <div>
+                    <h4 class="text-2xl font-bold mb-4">Archival Precision</h4>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      A permanent, digitized record of your entire insurance
+                      estate, accessible through a single, secure intelligence
+                      dashboard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <h2
+                class="text-5xl md:text-6xl font-extrabold tracking-tight mb-8"
+              >
+                The Methodology
+              </h2>
+              <p class="text-xl text-on-surface-variant font-light mb-12">
+                We don't just find insurance; we archive certainty. Our
+                three-step protocol ensures zero ambiguity in your coverage.
+              </p>
+              <div class="rounded-2xl overflow-hidden shadow-2xl relative">
+                <img
+                  alt="The Method"
+                  class="w-full aspect-square object-cover"
+                  data-alt="abstract architectural shot of a minimalist library with clean lines and soft natural light reflecting on polished surfaces"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJJP-9BclM3cp6U5B8Jfa_PK0TavqYXD98Y7QNJk9anweciMxmWXZSKjfZNZqUyT8Rz6inAhpZz_NM403Ul9lbXCYdWHnvH1QknV9LGYeshlMBOAoXd6nI7FFdWUTlKm2c8-umgFuJNF8-KTD0DbtR9DmQhRA8wgzASPtnnAa63VpNstYs505lPgu40BW-Ut8papVQrMwwkdLJDH2QbHiRpCdoDV2SbNhqFUEIE8BOx1Q1RcULjXNlDfz6o39m67--EaDfLcCo-Sk"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"
+                ></div>
+                <div class="absolute bottom-10 left-10 right-10">
+                  <p class="text-white text-lg font-medium italic">
+                    "Data is only as valuable as the clarity it provides. We
+                    prioritize the latter."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Global Trust -->
+      <section class="py-24 border-y border-outline-variant/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+          <p
+            class="text-center text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-12"
+          >
+            Underwritten by Global Authority
+          </p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 items-center grayscale opacity-60 hover:grayscale-0 transition-all duration-700"
+          >
+            <img
+              class="h-8 mx-auto object-contain"
+              data-alt="minimalist clean corporate logo for a global insurance firm"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3LQV65NG-BypKHXUZ5D29eUptQScGLQ4QMrhxpVALCx1XuDXBcd8PLndYag_katI7ipNJjQlJVDDe55dU0w3Kyr2p5KtbBKhZNejhUdd6if4SWregnbIwi0bZ71Yo2hbcn6oSXa765hnt_bvVLNsM7f6Us2a4ZeIynU0CAOVFYzIfpteWbjdAbIyU0hTxLiESaoeAKtvUlgdCO8g-Pe2d_p0j7Qcs2TIVFkf6lNXwIWASE3mppHxgoGA_i-D--VliCxNqW6BMoyc"
+            />
+            <img
+              class="h-10 mx-auto object-contain"
+              data-alt="sophisticated typographic logo for a Swiss reinsurance bank"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGRjvmOIu9ZURu-WZ9nSxp53YfHft1H6kZ6wNj3pRw5--7EpWbEsfEszj82T_XvlqQHxKKUTRo-6AUbIzVZyVEeh_yUBxpHd2oMkrgJ9-XlffWTrp98DZ8VO7bRQdMeDfrpoBfeYCRwZz7lSnnI7DColL9Cgun5WuN0l4CGGLJzOONxeGMEF65zKLjFvbgZSeJseFyJBFQFJFWILg234n-bvLouwCrKnL9620bbvQnSNqj1qC0AutFdA6jN-lhnOcwh3JyoO2vALA"
+            />
+            <img
+              class="h-7 mx-auto object-contain"
+              data-alt="elegant sans-serif logo for an international financial group"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVqQP24VzslK1rD7OveCwEQ2DMqpvMrSloKd4TlNPl5p_Vz--KhHVEITn3cy0ZwQUFNiJ2OUSl1NIYAuEwtkRl7NOHhbdPr5XQinqmNUmH4NkxLPV0fxtFbaqXr9VHgddKk6xCYNUYwbqBQ3tsImybCWM0RckGyBR-isgDayDOQbUx4tGRJgosUr3-lr1ltj4k6EphhAOhxLFB1BDKY9lg8bpFtEHP8L1H4V42AHjxo1aPi_RRjlLwUxu7uWAgmM-GD62g_UMTfKA"
+            />
+            <img
+              class="h-9 mx-auto object-contain"
+              data-alt="bold modern logo for a risk management consultancy"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgqOdcroWBw5eegNXpHVoZSId6dYdw7MDyJ6I9Sc9RwhmX4aYqGvvVoVgRm4F88gx04yZcG_TrtqCDwOUA_iV8qc2kjm4B91bGEuziwGD-Lx2Oevy0Hgd1wd3CqKB88gBf2BD8PTyddBkl3YB84fcxRJR6cFs4iN1afXYuEBibjodUVcqEv58ZFIC6mtmA4pi9RAYMnbOUNCzN2s8NYz3agPIn9LfJUpYcsn6YCmO38zYIdlqPYTxZS1_xg0YGKivTUzu-_lpzZ5Y"
+            />
+            <img
+              class="h-8 mx-auto object-contain"
+              data-alt="classic serif logo for a century-old underwriting house"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJOL0OzWwh_A_VcBCcBfkZcxFBY8x8nLGuy1vLEq4RNydUcGA0UzlVf17X54wyfXKx_VSA9HeM675o3uKHVYcM_easQ0yN8PcuaQdRTtOvUFK-9wN76cUXwPfnfMm_2B1moTQKz49NItYvts_sbN6J38RB14dFfLn26SGg7OXfXdRwgB9QSmqhsDvvRRF4w1YFZv4IiKYy40VKx8ihBzk-s9tsJPr8FoolR7mCD_NvTOnVKIxeHnR8etn0YNRfFYa0fyJ7xrTe9Sg"
+            />
+            <img
+              class="h-10 mx-auto object-contain"
+              data-alt="minimal geometric logo for a digital asset protection firm"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuw6Ymc8SY1k8DEPmd2ZjNWaeSHX5zvmBNjSC1T1HlGkwgAOSVOhbov7aioZRKm8gFoUwWz1t3Kll1Gb8m5ZrAorVFxbj9fVKskHNG3J0qtG81xJJKIF9qQQRIZps22nmMOCU31ZnbXevU1svmhJXN9X5bpTVnBIO0BdyQYZrDsSp-SUXCDjw2wEDhTt-ySA8qDJHfoG0Zt9Tmm7MTKtz-z9xwPFj5Bd_ti3paD4NSWgSNOamIMVt7a36LbqarMSCAMmubViBmfNI"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Voice of Authority (Testimonials) -->
+      <section class="py-32 bg-surface-container-low">
+        <div
+          class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-12"
+        >
+          <div class="lg:col-span-1">
+            <h2 class="text-4xl font-extrabold tracking-tight mb-6">
+              Voice of Authority
+            </h2>
+            <p class="text-on-surface-variant">
+              Insights from the leaders who rely on PolicyCures for
+              institutional risk governance.
+            </p>
+          </div>
+          <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+              <p class="text-lg text-on-surface italic mb-8 leading-relaxed">
+                "The level of granular detail PolicyCures provides transformed
+                how we view our risk landscape. It's no longer just a policy;
+                it's a strategic asset."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="professional headshot of a middle-aged male corporate executive with silver hair in a dark blue suit"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Gkwdlf1Jq8nbprA5Iay9daof40oaTrazLmEbPbVDXrP8WPH8dOgL-sO2bpKQ78tas7pP7xXPZo-aUKA4jvzHNeEH05Epvs16pFJB_xvDawetY7Cx0ik5uf52vQuxZ24wvJPwH93tr4zgsZFSBnNEP9ulGfD7d3KpF1fNu26NC4TXq3v6Z0-xVYkR-0iMDqeFb1-QfrzbP1ItngcHhCYjtya27k6GkgbPKMQt-lB_sxzGLLK6JSRLwnGC29pCYVB2kqKRsj_NJe4"
+                  />
+                </div>
+                <div>
+                  <h5 class="font-bold text-sm">Marcus Thorne</h5>
+                  <p
+                    class="text-xs text-on-surface-variant uppercase tracking-widest"
+                  >
+                    Director of Risk, Aethelgard
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+              <p class="text-lg text-on-surface italic mb-8 leading-relaxed">
+                "Finally, a platform that respects the complexity of global
+                estates. Their editorial approach to data is exactly what the
+                industry was missing."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="professional headshot of a female executive with confident expression wearing professional glasses and a blazer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDThxqzcZE0Inmf6W-RIxvBoIpa1QH9ILs_Kzr910LTXhdZFUJPd_Xh7cn05lR0RcEvZ8VPsNrEd6_7Ffy3AsE-lKeRYH7QuifHmwXDdsyxTQd8lbzu2-SCtUfJ0p4Jrqmy5U45Lan2ALPSYNLC-HTTHU6yrWYz1iGr-Yj-75SSD4zL1nT0cMNTYON2BZOKsWxZXvgMcl3GHwAC79LLOLq9O9oOfwHV9AzPdszcLYAg9OG9dAInaDQ7wgTl6_fFwD9enSUef9xk3cU"
+                  />
+                </div>
+                <div>
+                  <h5 class="font-bold text-sm">Elena Vance</h5>
+                  <p
+                    class="text-xs text-on-surface-variant uppercase tracking-widest"
+                  >
+                    Founding Partner, Vance-Krieger
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Intelligence Journal (Grid-based layout) -->
+      <section class="py-32 bg-background">
+        <div class="max-w-screen-2xl mx-auto px-8">
+          <div class="flex justify-between items-end mb-16">
+            <div>
+              <h2 class="text-4xl font-extrabold tracking-tight mb-4">
+                Intelligence Journal
+              </h2>
+              <p class="text-on-surface-variant">
+                Critical perspectives on risk, protection, and the digital
+                economy.
+              </p>
+            </div>
+            <a
+              class="text-primary font-bold flex items-center gap-2 group"
+              href="#"
+            >
+              View All Articles
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <article class="group cursor-pointer">
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-surface-container-low"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="abstract digital representation of glowing data streams flowing through a dark space with depth and blue light"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYn93rN0qBSXELv6CtnN4djKkNBqT-jfP1gR38itcloKuHrENifkTKBjuQEMnq_ALg_qFIgkb0JVGt9bLwTh5e52_AiSGxO1tG4ASMC19eR-DLsyiWoFZyHnCTE-A5alNmH_PNWv6ODFWRjHjE3yENz-vPg0AlOVMRyGnqZ8tmUSTV0vfgVbgQLz3QtmMsR5uhj95Hp3yPOkYsrG6R0urIQaTKaQoygAWYQaeJn55T393DRKHyl6e-pwJiispf80ahbmlhDw0bQVM"
+                />
+              </div>
+              <span
+                class="text-xs font-bold text-primary uppercase tracking-[0.15em] mb-3 block"
+                >Risk Analysis</span
+              >
+              <h3
+                class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors"
+              >
+                Protecting Digital Estates in the Age of AI
+              </h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed line-clamp-2"
+              >
+                How emerging neural technologies are redefining traditional
+                liability frameworks for the top 1%.
+              </p>
+            </article>
+            <article class="group cursor-pointer">
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-surface-container-low"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="satellite view of a planet earth with glowing connection nodes at night showing global connectivity"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFVbCqeb3hEB2DUTUryIWUbGakKtxRQTuIqL6_0Uwwu5Mb3tvAHznbCE2NYvZbURyUKlgc7r3_MMWWOdL8cmZePE5vIJnhQFn8HdltOgBAjd7LJQlQ7OMbGormCX49YbCVvuUTj5HDtptMCq_448CoYCo3IZ_FI2t8D2aU34BIIxetV6LmJu--YspVQprjgqtUJfHGWwHLdOu0m8NlOzdwS0tTKxwn92_tAHRRtVKZPKfnHLxZgbp1DWZKeyl_LBvfpkUISLg-3zs"
+                />
+              </div>
+              <span
+                class="text-xs font-bold text-primary uppercase tracking-[0.15em] mb-3 block"
+                >Global Trends</span
+              >
+              <h3
+                class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors"
+              >
+                Navigating Climate Risk for Coastal Portfolios
+              </h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed line-clamp-2"
+              >
+                A strategic guide to asset preservation amidst shifting
+                environmental underwriting standards.
+              </p>
+            </article>
+            <article class="group cursor-pointer">
+              <div
+                class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-surface-container-low"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="close up of a person in a high-end suit holding an elegant fountain pen over a leather-bound journal"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1sAzffZrWtNB3NLBgDa9uIQ3hwvGUw4Xe-xCzLwYnVumKxpg70h0h6f7PnO9zU8K2Clcle2GOWOXBUmHktUeMRwEnBLDATXON2HMsCnQd2qMTGyjeSeBMwhyuV_5D2-gYjK7n_9EMvXEe8TgXfJGlNLCUEo1axjb19nSCHBdVlmmJt05ezibfLGK_eytNHA3JIX1w4bMss9LaodGs9AkSX0f60AA0r8Ij7Fe0JtVFhJemzKIVzSmFdPQSpH77-7iZo5TJfCdqQDA"
+                />
+              </div>
+              <span
+                class="text-xs font-bold text-primary uppercase tracking-[0.15em] mb-3 block"
+                >Legacy</span
+              >
+              <h3
+                class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors"
+              >
+                The Art of Generational Insurance Architecture
+              </h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed line-clamp-2"
+              >
+                Designing longevity into your estate with multi-layered,
+                editorialized policy structures.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter CTA -->
+      <section class="py-24 max-w-screen-2xl mx-auto px-8 mb-24">
+        <div
+          class="premium-gradient rounded-2xl p-12 md:p-24 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative"
+        >
+          <div
+            class="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none"
+          >
+            <svg
+              class="w-full h-full"
+              preserveaspectratio="none"
+              viewbox="0 0 100 100"
+            >
+              <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"></path>
+            </svg>
+          </div>
+          <div class="z-10 max-w-xl">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+              Stay Ahead of the Curve
+            </h2>
+            <p class="text-primary-fixed text-lg">
+              Receive our weekly intelligence briefing on global risk and elite
+              protection strategies.
+            </p>
+          </div>
+          <div class="z-10 w-full md:w-auto">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <input
+                class="px-6 py-4 rounded-md bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:ring-2 focus:ring-white/50 focus:border-transparent min-w-[300px]"
+                placeholder="Your executive email"
+                type="email"
+              />
+              <button
+                class="bg-white text-primary px-8 py-4 rounded-md font-bold hover:bg-secondary-fixed transition-all"
+              >
+                Subscribe Now
+              </button>
+            </div>
+            <p class="text-primary-fixed/60 text-xs mt-4">
+              By subscribing, you agree to our confidential handling of your
+              data.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Shell -->
+    <footer class="bg-[#f6f2fc] dark:bg-slate-900 border-t border-[#c8c4d5]/15">
+      <div class="w-full py-16 px-8 max-w-screen-2xl mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+          <div>
+            <div class="flex items-center gap-2 mb-6">
+              <span
+                class="material-symbols-outlined text-[#1f108e] dark:text-indigo-400 text-3xl"
+                data-icon="policy"
+                >policy</span
+              >
+              <span
+                class="font-manrope font-black text-2xl text-[#1f108e] dark:text-indigo-300"
+                >PolicyCures</span
+              >
+            </div>
+            <p
+              class="text-[#464553] dark:text-slate-400 text-sm font-inter leading-relaxed"
+            >
+              Transforming fragmented business data into actionable editorial
+              intelligence. The premium standard in insurance archival and risk
+              governance.
+            </p>
+          </div>
+          <div>
+            <h6
+              class="font-manrope font-bold text-[#1f108e] dark:text-indigo-300 mb-6 uppercase text-xs tracking-widest"
+            >
+              Solutions
+            </h6>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Life Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Portfolio Motor</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Estate Property</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Cyber Liability</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6
+              class="font-manrope font-bold text-[#1f108e] dark:text-indigo-300 mb-6 uppercase text-xs tracking-widest"
+            >
+              Company
+            </h6>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Our Method</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Intelligence Journal</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Claims Center</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6
+              class="font-manrope font-bold text-[#1f108e] dark:text-indigo-300 mb-6 uppercase text-xs tracking-widest"
+            >
+              Connect
+            </h6>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Contact Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] dark:hover:text-indigo-200 transition-all underline-offset-4 hover:underline"
+                  href="#"
+                  >Twitter / X</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-[#c8c4d5]/10"
+        >
+          <span
+            class="font-inter text-sm text-[#464553] dark:text-slate-500 tracking-normal"
+            >© 2024 PolicyCures Editorial Intelligence. All rights
+            reserved.</span
+          >
+          <div class="flex gap-8">
+            <a
+              class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] transition-all underline-offset-4 hover:underline"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-[#464553] dark:text-slate-500 font-inter text-sm hover:text-[#1f108e] transition-all underline-offset-4 hover:underline"
+              href="#"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
